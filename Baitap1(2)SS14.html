@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let count=0;
+        let num=[];
+        for (let i=0; i<5; i++) {
+            let numbers=prompt ("Mời nhập 5 số");
+            num.push(numbers);}
+        let max = num[0];
+            let index = 0;
+            for (let i = 0; i < num.length; i++) {
+                if (num[i] > max) {
+                    max = num[i];
+                    index = i;
+                }
+            }
+        
+        console.log(`Giá trị lớn nhất là ${max} tại vị trí là ${index}`);        
+    </script>
+</body>
+</html>

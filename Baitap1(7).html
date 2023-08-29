@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <script>
+        let number = [];
+        let add;
+
+        while (add !== "0") {
+            add = prompt("nhap so, khi nhap 0 end");
+            if (add !== "0") {
+                number.push(add);
+            }
+        }
+
+        if (number.length === 0) {
+            alert("ko co so kiem tra");
+        } else {
+            while (true) {
+                let input = prompt("so kiem tra");
+
+                let index = number.indexOf(input);
+                if (index !== -1) {
+                    number.splice(index, 1);
+                    break;
+                } else {
+                    alert(`so ${input} ko co trong mang.`);
+                }
+            }
+
+            console.log(number);
+        }
+    </script>
+</body>
+
+</html>

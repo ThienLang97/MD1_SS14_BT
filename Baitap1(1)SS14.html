@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let count=0;
+        let numbers=[];
+        
+        do {
+            let num=+prompt ("Mời bạn nhập số");
+            if (Number.isInteger(num)){
+                count++;
+                if (num>10) {
+                    numbers.push(num)
+                }
+            }else {
+                console.log("Số bạn nhập ko phải số nguyên nhập lại");
+            }
+            
+        } while (count<5);
+        console.log(numbers);
+    </script>
+</body>
+</html>

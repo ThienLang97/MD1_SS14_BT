@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let array=[];
+        let tb=0;
+        for (let i=0; i<5; i++) {
+            let number = prompt("Nhập số phần tử trong mảng");
+            array.push(number);
+        }
+        let max=array[0];
+        for (let i=1; i<array.length; i++) {
+            if (array[i]>max) {
+                max = array[i];
+            }
+            tb += array[i];
+        }
+        
+                
+            
+        
+        
+        console.log(array);
+        console.log(max);
+        console.log("Trungbinh là", tb);
+           
+            
+        
+    </script>
+</body>
+</html>
